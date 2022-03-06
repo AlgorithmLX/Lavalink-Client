@@ -30,9 +30,20 @@ Or Gradle:
     }
 
     dependencies {
-        compile group: 'com.github.FredBoat', name: 'Lavalink-Client', version: 'x.y.z'
+        implementation "com.github.FredBoat:Lavalink-Client:x.y.z"
     }
 ```
+
+Or Gradle DSL:
+
+```groovy
+    repositories {
+         maven { url = uri("https://jitpack.io") }
+    }
+    
+    dependencies {
+         implementation("com.github.FredBoat:Lavalink-Client:x.y.z")
+    }
 
 ### Jitpack versions
 Jitpack versioning is based on git branches and commit hashes, or tags. Eg:
